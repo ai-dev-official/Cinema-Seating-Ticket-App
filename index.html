@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patez Cinema</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="site-header">
+            <div class="movie-choice">
+                <label id="choose">Choose a movie</label>
+                <select id="movie">
+                    <option value="10">The Terminator (€10)</option>
+                    <option value="15">Commando (€15)</option>
+                    <option value="20">Coming to America (€20)</option>
+                    <option value="18">RoboCop (€18)</option>
+                    <option value="5">Sleepy Hollow (€5)</option>
+                    <option value="5">The Seeker (€5)</option>
+                    <option value="22">Blank Check (€22)</option>
+                    <option value="20">The Escape (€20)</option>
+                    <option value="12">The Forgotten Prisoners (€12)</option>
+                    <option value="18">King Kong (€18)</option>
+                </select>
+            </div>
+
+            <ul class="seat-details">
+                <li>
+                    <div class="seat not-available"></div>
+                    <small>Reserved</small>
+                </li>
+                <li>
+                    <div class="seat selected"></div>
+                    <small>Selected</small>
+                </li>
+                <li>
+                    <div class="seat booked"></div>
+                    <small>Booked</small>
+                </li>
+            </ul>
+        </div>
+
+        <div class="screen"></div>
+
+        <div class="main_hall">
+
+            <div class="seats_alley left">
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                </div>
+
+            </div>
+
+            <div class="seats_alley right">
+                <div class="seat_row ">
+                    <div class="seat selected"></div>
+                    <div class="seat not-available" id="seat-2"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+
+
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat booked"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="seat_row ">
+                    <div class="seat"></div>
+                    <div class="seat not-available"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="booking-details">
+            <h1 class="text">
+                You have selected <span id="num_seats">0</span> seats for the price of <span>€</span><span
+                    id="total">0</span>
+            </h1>
+        </div>
+    </div>
+
+    <script src="js/site.js"></script>
+</body>
+
+</html>
